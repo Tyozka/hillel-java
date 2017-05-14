@@ -21,45 +21,14 @@ import java.util.Scanner;
 public class HomeWork1CorrMistakes {
     public static void main(String[] args) {
         int first;
-        StringBuilder firstS = new StringBuilder("");
         int second;
-        StringBuilder secondS = new StringBuilder("");
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please input first number:");
-        do {
-            try {
-                firstS.append( scanner.next());
-                first = Integer.parseInt(firstS.toString());
-                break;
-            } catch ( NumberFormatException e) {
-
-                System.out.println("You input NOT integer number!");
-                System.out.println("You input: " + firstS );
-                System.out.println("Please input first number:");
-                firstS.delete(0,firstS.length());
-            }
-        } while (true) ;
-
-
+        first = enterNumber();
         System.out.println("Your input " + first + " as a first number.");
 
         System.out.print("Please input second number:");
-        do {
-            try {
-                secondS.append( scanner.next());
-                second = Integer.parseInt(secondS.toString());
-                break;
-            } catch ( NumberFormatException e) {
-
-                System.out.println("You input NOT integer number!");
-                System.out.println("You input: " + secondS );
-                System.out.println("Please input second number:");
-                secondS.delete(0 , secondS.length());
-            }
-        } while (true) ;
-
-
+        second = enterNumber();
         System.out.println("Your input " + second + " as a first number.");
 
         System.out.println("Sum is " + (first + second));
@@ -69,4 +38,26 @@ public class HomeWork1CorrMistakes {
 
 
     }
+
+     static int enterNumber(){
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder inputString = new StringBuilder("");
+        int number;
+
+        do {
+            try {
+                inputString.append( scanner.next());
+                number = Integer.parseInt(inputString.toString());
+                break;
+            } catch ( NumberFormatException e) {
+
+                System.out.println("You input NOT integer number!");
+                System.out.println("You input: " + inputString );
+                System.out.println("Please input first number:");
+                inputString.delete(0,inputString.length());
+            }
+        } while (true) ;
+        return number;
+    }
+
 }
