@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by Velev Vlad on 11.05.2017.
- *
- *
- *
  * Создать простой (очень) калькулятор. Взаимодействие с пользователем по следующему сценарию:
- * “
  *  Please input first number:
  *  Your input <inputted number> as a first number.
  *  Please input second number:
@@ -19,9 +15,6 @@ import java.util.Scanner;
  *  Multiplication is <multiplication>
  *  Division is <division>
  *  “ *
- *
- *
- *
  */
 public class HomeWork1{
     public static void main(String[] args) {
