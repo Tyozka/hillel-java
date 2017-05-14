@@ -27,9 +27,7 @@ public class AverageAnyNumbers {
                 if (list.size() < 2) {
                     System.out.println("Please input min 2 numbers");
                     continue;
-
                 }
-
 
             } else {
                 try {
@@ -44,13 +42,7 @@ public class AverageAnyNumbers {
                     continue;
                 }
             }
-
             break;
-
-
-
-
-
         } while(true);
 
         int sum = 0;
@@ -60,12 +52,5 @@ public class AverageAnyNumbers {
         }
 
         System.out.println(" Average for input numbers is " + (double)sum / list.size() );
-
-
-
-
     }
-
-
-
 }
