@@ -19,7 +19,7 @@ public class AverageAnyNumbers {
 
         do {
             input = scanner.next();
-            if( input.toLowerCase().equals(new String("e"))){
+            if( input.toLowerCase().equals("e")){
                 if(list.isEmpty()){
                     System.out.println("You didn't input numbers");
                     continue;
