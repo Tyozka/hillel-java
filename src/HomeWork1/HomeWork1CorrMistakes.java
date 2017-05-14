@@ -53,7 +53,7 @@ public class HomeWork1CorrMistakes {
 
                 System.out.println("You input NOT integer number!");
                 System.out.println("You input: " + inputString );
-                System.out.println("Please input first number:");
+                System.out.println("Please input number:");
                 inputString.delete(0,inputString.length());
             }
         } while (true) ;
