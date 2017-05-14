@@ -7,14 +7,14 @@ import java.util.Scanner;
 /**
  * Created by Velev Vlad on 15.05.2017.
  */
-public class ArithmeticMeanAnyNumbers {
+public class AverageAnyNumbers {
     public static void main(String[] args) {
         ArrayList <Integer> list = new ArrayList<>() ;
         Scanner scanner = new Scanner(System.in);
         String input;
         int tempNum;
 
-        System.out.println("This program Calc Arithmetic Mean of any numbers that you input");
+        System.out.println("This program Calc Average of any numbers that you input");
         System.out.println("Please input number. To the End input E.");
 
         do {
@@ -59,7 +59,7 @@ public class ArithmeticMeanAnyNumbers {
             sum += num;
         }
 
-        System.out.println(" Arithmetic Mean for input numbers is " + (double)sum / list.size() );
+        System.out.println(" Average for input numbers is " + (double)sum / list.size() );
 
 
 

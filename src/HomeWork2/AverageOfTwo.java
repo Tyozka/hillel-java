@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Velev Vlad on 15.05.2017.
  */
-public class ArithmeticMean {
+public class AverageOfTwo {
     public static void main(String[] args) {
         int first;
         int second;
@@ -18,7 +18,7 @@ public class ArithmeticMean {
         System.out.print("Please input second number:");
         second = enterNumber(scanner);
 
-        System.out.println("Arithmetic mean of " + first + " and "+ second + " is " + (double)(first +second)/2 );
+        System.out.println("Average of " + first + " and "+ second + " is " + (double)(first +second)/2 );
     }
 
 
