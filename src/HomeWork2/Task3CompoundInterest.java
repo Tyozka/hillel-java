@@ -11,6 +11,7 @@ public class Task3CompoundInterest {
 
 
     public static void main(String[] args) {
+
         double deposit; // депозит в грн
         double percent; // процент
         int years; // количество лет
@@ -42,7 +43,7 @@ public class Task3CompoundInterest {
             System.out.println( "|");
         }
 
-        System.out.println("|------------------------------------------------------------------------------------------|");
+        System.out.println("|-----------------|-----|------------------|------------------|----------------------------|");
 
 
 
