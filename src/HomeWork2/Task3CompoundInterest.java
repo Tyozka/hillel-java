@@ -26,6 +26,8 @@ public class Task3CompoundInterest {
 
         System.out.println("Через " + years + " лет(года) Ваш доход будет составлять: - " + depositPercent(deposit, percent, years) + " грн" );
         System.out.println("Всего на Вашем счету будет: - " + (deposit + depositPercent(deposit, percent, years)) + " грн" );
+
+
         System.out.println("Подробный расчет за каждый год");
         System.out.println("____________________________________________________________________________________________");
         System.out.println("| Начальная сумма | Год | Доход с депозита |  Денег на счету  | Процент от начальной суммы |");
