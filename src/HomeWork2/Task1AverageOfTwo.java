@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Velev Vlad on 15.05.2017.
  */
-public class AverageOfTwo {
+public class Task1AverageOfTwo {
     public static void main(String[] args) {
         int first;
         int second;

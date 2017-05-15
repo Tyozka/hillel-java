@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Новое требование от заказчика калькулятора - переделать калькулятор,
  * чтобы при неправильном вводе чисел программа запрашивала число заново и пользователь сам вводил операцию (+-* /)
  */
-public class CalcNew {
+public class Task0CalcNew {
     public static void main(String[] args) {
         int first;
         int second;

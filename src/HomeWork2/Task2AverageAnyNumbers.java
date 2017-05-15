@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by Velev Vlad on 15.05.2017.
  */
-public class AverageAnyNumbers {
+public class Task2AverageAnyNumbers {
     public static void main(String[] args) {
         ArrayList <Integer> list = new ArrayList<>() ;
         Scanner scanner = new Scanner(System.in);

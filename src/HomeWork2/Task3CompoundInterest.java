@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Программу, которая предлагает пользователю ввести сумму денежного вклада в гривнах, процент годовых, которые выплачивает банк, длительность вклада (лет).
  * Вывести накопленную сумму денег за каждый год и начисленные проценты.
  */
-public class CompoundInterest {
+public class Task3CompoundInterest {
 
 
     public static void main(String[] args) {
