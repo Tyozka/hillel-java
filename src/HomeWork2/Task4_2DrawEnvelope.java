@@ -17,18 +17,13 @@ import java.util.Scanner;
 public class Task4_2DrawEnvelope {
     public static void main(String[] args) {
         int width, height;
-        int center;
         Scanner scaner = new Scanner(System.in);
-
-
         System.out.println("Программа рисования конверта");
+        System.out.println("Введите ширину и высоту конверта");
+        width = height = enterNumber(scaner);
 
-        System.out.println("Введите ширину конверта");
-        width = enterNumber(scaner);
-
-        System.out.println("Введите высоту конверта");
-        height = enterNumber(scaner);
-
+        //System.out.println("Введите высоту конверта");
+        //height = enterNumber(scaner);
         String rectangle ="";
         for(int i = 0; i < height; i++){
             rectangle +=  createLine(i, width, height ) + "\r\n";
