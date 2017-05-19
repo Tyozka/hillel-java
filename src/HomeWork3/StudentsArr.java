@@ -7,7 +7,8 @@ public class StudentsArr {
     int numStudent = 30;// начальное количество студентов в одной группе
     int numGroups = 5;
     static int lastNumberOfStudentAddedToDB = 1;
-    static int capacityStudentDB = 0;
+    static int capacityStudenB = 0;
+    static int lastNumberOfGroupAddedToDB = 1;
     int idInArrStudentId = 0;
     int idInArrStudentName = 1;
     int idInArrStudentSurname =  2;
@@ -35,6 +36,22 @@ public class StudentsArr {
 
 
     public static void main(String[] args) {
+        StudentsArr test = new StudentsArr();
+        test.addNewGroupByName("First");
+        test.addNewGroupByName("Second");
+        test.addNewStudent(
+                "Вася",
+                "Петров",
+                "Муж",
+                "19,05,2018",
+                "1",
+                "2",
+                "Третья"
+        );
+        test.addStudentToGroup("Третья", 1);
+        System.out.println(test.groupName.toString());
+        System.out.println(test.groups.toString());
+        System.out.println(test.students.toString());
 
 
     }
@@ -54,33 +71,35 @@ public class StudentsArr {
             //todo расширить массив студентов / вынести в функцию
             return false;
         }
-        students[capacityStudentDB] = new String[9];
-        students[capacityStudentDB][idInArrStudentId] = "" + lastNumberOfStudentAddedToDB;
-        students[capacityStudentDB][idInArrStudentName] =studentName;
-        students[capacityStudentDB][idInArrStudentSurname] =studentSurname;
-        students[capacityStudentDB][idInArrSex] =sex;
-        students[capacityStudentDB][idInArrDateOfBirth] =dateOfBirth;
-        students[capacityStudentDB][idInArrStudentSpecialty] =studentSpecialty;
-        students[capacityStudentDB][idInArrStudentCourse] =studentCourse;
+        students[capacityStudenB] = new String[9];
+        students[capacityStudenB][idInArrStudentId] = "" + lastNumberOfStudentAddedToDB;
+        students[capacityStudenB][idInArrStudentName] =studentName;
+        students[capacityStudenB][idInArrStudentSurname] =studentSurname;
+        students[capacityStudenB][idInArrSex] =sex;
+        students[capacityStudenB][idInArrDateOfBirth] =dateOfBirth;
+        students[capacityStudenB][idInArrStudentSpecialty] =studentSpecialty;
+        students[capacityStudenB][idInArrStudentCourse] =studentCourse;
 
-        students[capacityStudentDB][idInArrStudentsMarks] = "";
+        students[capacityStudenB][idInArrStudentsMarks] = "";
 
 
         if(checkGroup(studentGroup)){
             if(!addStudentToGroup(studentGroup, lastNumberOfStudentAddedToDB)){
-                students[capacityStudentDB] = null;
+                students[capacityStudenB] = null;
                 return false;
             }
         } else {
             addNewGroupByName(studentGroup);
             if(!addStudentToGroup(studentGroup, lastNumberOfStudentAddedToDB)){
-                students[capacityStudentDB] = null;
+                students[capacityStudenB] = null;
                 return false;
             }
         }
 
+        students[capacityStudenB][idInArrStudentGroup] = studentGroup;
 
-        capacityStudentDB++;
+
+        capacityStudenB++;
         lastNumberOfStudentAddedToDB++;
         return true;
     }
@@ -92,12 +111,15 @@ public class StudentsArr {
             if(groupName[i] == null){
                 groupName[i] = studentGroupName;
                 idNewGroup = i;
+                break;
             }
         }
         if(idNewGroup != -1){
             for(int j = 0; j < groups.length; j++){
                 if( groups[j] == null ){
                     groups[j] = new int[2+numStudent];
+                    groups[j][0] = lastNumberOfGroupAddedToDB;
+                    lastNumberOfGroupAddedToDB++;
                     return;
                 }
             }
@@ -135,16 +157,16 @@ public class StudentsArr {
     private int getGroupIdByName(String group) {
         for (int i = 0; i < groupName.length; i++ ){
             if(groupName[i].equals(group)){
-                return i;
+                return i+1;
             }
         }
         return -1;
     }
 
     public boolean checkGroup(String studentGroup) {
-        for(String group : groupName){
-            if(group.equals(studentGroup)){
-               return true;
+        for (int i = 0; i < groupName.length; i++ ){
+            if(groupName[i] != null && groupName[i].equals(studentGroup)){
+                return true;
             }
         }
         return false;
