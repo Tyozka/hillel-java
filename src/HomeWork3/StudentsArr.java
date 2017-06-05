@@ -4,21 +4,23 @@ package HomeWork3;
  * Created by Влад on 18.05.2017.
  */
 public class StudentsArr {
-    int numStudent = 30;// начальное количество студентов в одной группе
-    int numGroups = 5;
-    static int lastNumberOfStudentAddedToDB = 1;
-    static int capacityStudenB = 0;
-    static int lastNumberOfGroupAddedToDB = 1;
-    int idInArrStudentId = 0;
-    int idInArrStudentName = 1;
-    int idInArrStudentSurname =  2;
-    int idInArrSex = 3;
-    int idInArrDateOfBirth = 4;
-    int idInArrStudentSpecialty = 5;
-    int idInArrStudentCourse = 6;
-    int idInArrStudentGroup = 7;
-    int idInArrStudentsMarks = 8;
+    private final int DEFAULT_NUM_STUDENTS_IN_GROUP = 30;// начальное количество студентов в одной группе
+    private final int DEFAULT_NUM_OF_GROUP = 5;// начальное количество групп
 
+
+    private final static int NUM_OF_STUDENT_DESCRIPTION = 6;
+
+    private final static int ID_OF_ID_IN_ARR_STUDENTS = 0;
+    private final static int ID_NAME_IN_ARR_STUDENTS = 1;
+    private final static int ID_SECONDE_NAME_IN_ARR_STUDENTS =  2;
+    private final static int ID_GROUP_IN_ARR_STUDENTS = 3;
+    private final static int ID_MARKS_IN_ARR_STUDENTS = 4;
+    private final static int ID_VISITS_IN_ARR_STUDENTS = 5;
+
+    private static int UNICAL_STUDENT_ID = 1; // уникальный индетификеатор студента
+
+    private final int DEFAULT_ERROR_INT_CODE = -1;
+    private final Object DEFAULT_ERROR_OBJECT_CODE = null;
 
 //    Группы
 //    Группы представляют собой массив масивов int
@@ -27,164 +29,504 @@ public class StudentsArr {
 //     при добавления нового студента в группу capacity++ ,  при удалении capacity--
 //     []
 //    ]
-    int [][] groups = new int[numGroups][];
-//    названия групп
-    String[] groupName = new String[numGroups];
+    private int [][] groups = new int[DEFAULT_NUM_OF_GROUP][DEFAULT_NUM_STUDENTS_IN_GROUP];
+    private String[] groupName = new String[DEFAULT_NUM_OF_GROUP]; // названия групп, синхронизирвоано с группами
 
 //  Студенты все
-    String[][] students =  new String[numStudent][];
+//    Студенты представляют собой массив масивов int
+//    [
+//     [studentID, idName, idSecondName, ..., ], // capacity = len-1-(кол. пустых эллементов)
+//
+//     []
+//    ....
+//     [capacity,...]....  capacity = len-1-(кол. пустых эллементов)
+//     при добавления нового студента  capacity++ ,  при удалении capacity--
+//    ]
+    private int [][] students =  new int [DEFAULT_NUM_STUDENTS_IN_GROUP][];
 
 
-    public static void main(String[] args) {
-        StudentsArr test = new StudentsArr();
-        test.addNewGroupByName("First");
-        test.addNewGroupByName("Second");
-        test.addNewStudent(
-                "Вася",
-                "Петров",
-                "Муж",
-                "19,05,2018",
-                "1",
-                "2",
-                "Третья"
-        );
-        test.addStudentToGroup("Третья", 1);
-        System.out.println(test.groupName.toString());
-        System.out.println(test.groups.toString());
-        System.out.println(test.students.toString());
+    private String[] studentNames = new String[DEFAULT_NUM_STUDENTS_IN_GROUP];
+    private String[] studentSurnames = new String[DEFAULT_NUM_STUDENTS_IN_GROUP];
+    private String[] sex  ={"Male", "Female"};
+    private String[] dateOfBirth  = new String[DEFAULT_NUM_STUDENTS_IN_GROUP];
+    private String[] studentSpecialty = new String[DEFAULT_NUM_STUDENTS_IN_GROUP];
+    private String[] studentCourse = new String[DEFAULT_NUM_STUDENTS_IN_GROUP];
 
 
+    public StudentsArr(){
+        this.students[this.students.length-1] = new int[1];
+        setCapacityOfStudent(0);
+        //initArr(groups);
     }
 
 
-//  Добавить нового студента
-    public boolean addNewStudent(String studentName,
-                                 String studentSurname,
-                                 String sex,
-                                 String dateOfBirth,
-                                 String studentSpecialty,
-                                 String studentCourse,
-                                 String studentGroup){
-        //проверка можно ли добавить нового студента
-        //todo сначала попытаться удалить пустые места и сдвинуть все не пустые влево
-        if(students[students.length-1] !=  null){
-            //todo расширить массив студентов / вынести в функцию
-            return false;
+
+
+//  Добавить нового студентав группу
+public boolean addNewStudent(String studentGroup, String studentName, String studentSurname){
+        int capacity = getCapacityOfStudent();
+//        ..проверка можем ли мы добавить студента, в capacity должно быть количество студентов
+//        его макс значение = len - 2
+        if(capacity >= this.students.length - 2){
+            expandStudents();
         }
-        students[capacityStudenB] = new String[9];
-        students[capacityStudenB][idInArrStudentId] = "" + lastNumberOfStudentAddedToDB;
-        students[capacityStudenB][idInArrStudentName] =studentName;
-        students[capacityStudenB][idInArrStudentSurname] =studentSurname;
-        students[capacityStudenB][idInArrSex] =sex;
-        students[capacityStudenB][idInArrDateOfBirth] =dateOfBirth;
-        students[capacityStudenB][idInArrStudentSpecialty] =studentSpecialty;
-        students[capacityStudenB][idInArrStudentCourse] =studentCourse;
-
-        students[capacityStudenB][idInArrStudentsMarks] = "";
-
-
-        if(checkGroup(studentGroup)){
-            if(!addStudentToGroup(studentGroup, lastNumberOfStudentAddedToDB)){
-                students[capacityStudenB] = null;
-                return false;
-            }
-        } else {
-            addNewGroupByName(studentGroup);
-            if(!addStudentToGroup(studentGroup, lastNumberOfStudentAddedToDB)){
-                students[capacityStudenB] = null;
-                return false;
-            }
-        }
-
-        students[capacityStudenB][idInArrStudentGroup] = studentGroup;
-
-
-        capacityStudenB++;
-        lastNumberOfStudentAddedToDB++;
-        return true;
-    }
-
-//    Создать новую группу по Имени
-    public void addNewGroupByName(String studentGroupName){
-        int idNewGroup = -1;
-        for( int i = 0; i < groupName.length; i++){
-            if(groupName[i] == null){
-                groupName[i] = studentGroupName;
-                idNewGroup = i;
+        addGroupName(studentGroup);
+        addStudentNames(studentName);
+        addStudentSurnames(studentSurname);
+        for(int i = 0; i < this.students.length-1; i++){
+            if(this.students[i] == DEFAULT_ERROR_OBJECT_CODE ){
+                this.students[i] = new int[NUM_OF_STUDENT_DESCRIPTION];
+               // initArr(this.students[i]);
+                this.students[i][ID_OF_ID_IN_ARR_STUDENTS] = UNICAL_STUDENT_ID;
+                this.students[i][ID_NAME_IN_ARR_STUDENTS] = getIdStudentNames(studentName);
+                this.students[i][ID_SECONDE_NAME_IN_ARR_STUDENTS] = getIdStudentSurnames(studentSurname);
+                this.students[i][ID_GROUP_IN_ARR_STUDENTS]= getIdGroupName(studentGroup);
                 break;
             }
         }
-        if(idNewGroup != -1){
-            for(int j = 0; j < groups.length; j++){
-                if( groups[j] == null ){
-                    groups[j] = new int[2+numStudent];
-                    groups[j][0] = lastNumberOfGroupAddedToDB;
-                    lastNumberOfGroupAddedToDB++;
-                    return;
-                }
-            }
-            //todo увеличить масим groups[j]
-            addNewGroupByName(studentGroupName);
-            return ;
-        }
-    }
+        addStudentToGroup(UNICAL_STUDENT_ID, getIdGroupName(studentGroup));
+        capacity++;
+        setCapacityOfStudent(capacity);
+        UNICAL_STUDENT_ID++;
+        return true;
+}
 
-    //    Если мы добавили студента в группу тогда True иначе false
-    public boolean addStudentToGroup(String groupName, int StudentId ){
-        int groupId = getGroupIdByName(groupName);
-        if(groupId == -1){
-            addNewGroupByName(groupName);
-        }
-        for(int i = 0; i < groups.length; i++){
-            if( groups[i][0] == groupId ){
-                int groupCapacity = groups[i][groups[i].length - 1];
-                for(int j = 1; j < groups[i].length - 1; j++ ){ //
-                    if(groups[i][j] == 0){
-                        groups[i][j] = StudentId;
-                        groupCapacity++;
-                        groups[i][groups[i].length - 1] = groupCapacity;
-                        return true;
-                    }
-                }
-                //todo Расширить группу, так как нам не хватило место чтоб добавить студента
-            }
-        }
-        return addStudentToGroup(groupName, StudentId); // пытаемся еще раз
+    private void expandStudents(){
+        int capacity = getCapacityOfStudent();
+        delCapacityOfStudent();
+        expandArray(this.students);
+        setCapacityOfStudent(capacity);
+    }
+    private void expandGrops(){
+        expandArray(this.groups);
+
     }
 
 
+    public boolean createGroup(String studentGroupName){
 
-    private int getGroupIdByName(String group) {
-        for (int i = 0; i < groupName.length; i++ ){
-            if(groupName[i].equals(group)){
-                return i+1;
-            }
+        addElement(this.groupName,studentGroupName);
+        int idGroup = getIdGroupName(studentGroupName);
+        if(idGroup >= this.groups.length){
+            expandGrops();
+            this.groups[idGroup] = new int[DEFAULT_NUM_STUDENTS_IN_GROUP];
+            //initArr(this.groups[idGroup]);
+            this.groups[idGroup][ this.groups[idGroup].length-1] = 0;
         }
-        return -1;
+        return true;
     }
 
-    public boolean checkGroup(String studentGroup) {
-        for (int i = 0; i < groupName.length; i++ ){
-            if(groupName[i] != null && groupName[i].equals(studentGroup)){
+    //  Удалить студента из групп по фамилии
+    public boolean delStudentBySecondeName(String secondeName){
+        int IDSecondeName;
+        int studentId;
+        int studentUnicId;
+        int studentGroup;
+
+        // Получить ID фамилии
+        IDSecondeName = getIdByElement(this.studentSurnames, secondeName);
+        if(isError(IDSecondeName)){
+            System.out.println("В базе нет студента с фамилией - " + secondeName);
+            return false;
+        }
+        studentId = getIdByElement(this.students,IDSecondeName, ID_SECONDE_NAME_IN_ARR_STUDENTS);
+        if(isError(studentId)){
+            System.out.println("В базе студентов не нашли студента с фамилией - " + secondeName );
+            System.out.println("при этом, в базе фамилий мы добавляли студента с фамилией " + secondeName );
+            System.out.println("В базе он под номером " + IDSecondeName);
+            return false;
+        }
+        studentUnicId = this.students[studentId][ID_OF_ID_IN_ARR_STUDENTS];
+        studentGroup = this.students[studentId][ID_GROUP_IN_ARR_STUDENTS];
+
+        return deleteElement(this.groups[studentGroup], studentUnicId );
+
+    }
+
+
+
+    private void addStudentToGroup( int unicalStudentId, int idStudentGroup){
+        int capacity = this.groups[idStudentGroup][this.groups[idStudentGroup].length-1]; //сохранили длину
+        if(idStudentGroup >= this.groups.length){
+            expandArray(this.groups);
+        }
+        for(int i = 0; i < this.groups[idStudentGroup].length-1; i++){
+            if(this.groups[idStudentGroup][i] == 0){
+                this.groups[idStudentGroup][i] = unicalStudentId;
+                capacity++;
+                this.groups[idStudentGroup][this.groups[idStudentGroup].length-1] = capacity;
+                return;
+            }
+        }
+
+        this.groups[idStudentGroup][this.groups[idStudentGroup].length-1] = 0;//сбросить длину
+        expandArray(this.groups[idStudentGroup]);
+        this.groups[idStudentGroup][this.groups[idStudentGroup].length-1] = capacity; // вернули длину
+        addStudentToGroup(unicalStudentId,  idStudentGroup);
+
+    }
+
+
+    private int getCapacityOfStudent(){
+        return students[students.length-1][0];
+    }
+    private void delCapacityOfStudent(){
+        students[students.length-1][0] = 0;
+    }
+    private void setCapacityOfStudent(int capacity){
+        this.students[this.students.length-1][0] = capacity;
+    }
+
+//    groupName
+    private boolean addGroupName(String groupName){
+        if(checkGroupName(groupName)) return true;
+        return createGroup(groupName);
+    }
+    private String getGroupName(int id){
+        return getElementById(this.groupName, id);
+    }
+    private int getIdGroupName(String groupName){
+        return getIdByElement(this.groupName, groupName);
+    }
+    private boolean delGroupName(String groupName){
+        return deleteElement(this.groupName, groupName);
+    }
+    private void expandGroupName(){
+        expandArray(this.groupName);
+    }
+    private boolean checkGroupName(String groupName){
+        return checkElementInArray(this.groupName,groupName);
+    }
+
+
+    //  StudentNames
+    private boolean addStudentNames(String name){
+        return addElement(this.studentNames, name);
+    }
+    private String getStudentNames(int id){
+        return getElementById(this.studentNames, id);
+    }
+    private int getIdStudentNames(String name){
+        return getIdByElement(this.studentNames, name);
+    }
+    private boolean delStudentNames(String name){
+        return deleteElement(this.studentNames, name);
+    }
+    private void expandStudentNames(){
+        expandArray(this.studentNames);
+    }
+    private boolean checkStudentName(String name){
+        return checkElementInArray(this.studentNames,name);
+    }
+
+//    StudentSurnames
+    private boolean addStudentSurnames(String surname){
+    return addElement(this.studentSurnames, surname);
+}
+    private String getStudentSurnames(int id){
+        return getElementById(this.studentSurnames, id);
+    }
+    private int getIdStudentSurnames(String surname){
+        return getIdByElement(this.studentSurnames, surname);
+    }
+    private boolean delStudentSurnames(String surname){
+        return deleteElement(this.studentSurnames, surname);
+    }
+    private void expandStudentSurnames(){
+        expandArray(this.studentSurnames);
+    }
+    private boolean checkStudentSurnames(String surname){
+        return checkElementInArray(this.studentSurnames,surname);
+    }
+
+//    DateOfBirth
+    private boolean addStudentDateOfBirth(String dateOfBirth){
+    return addElement(this.dateOfBirth, dateOfBirth);
+}
+    private String getStudentDateOfBirth(int id){
+        return getElementById(this.dateOfBirth, id);
+    }
+    private int getIdStudentDateOfBirth(String dateOfBirth){
+        return getIdByElement(this.dateOfBirth, dateOfBirth);
+    }
+    private boolean delStudentDateOfBirth(String dateOfBirth){
+        return deleteElement(this.dateOfBirth, dateOfBirth);
+    }
+    private void expandStudentDateOfBirth(){
+        expandArray(this.dateOfBirth);
+    }
+    private boolean checkStudentDateOfBirth(String dateOfBirth){
+        return checkElementInArray(this.studentSurnames,dateOfBirth);
+    }
+
+//    studentSpecialty
+    private boolean addStudentSpecialty(String studentSpecialty){
+        if(checkStudentSpecialty(studentSpecialty)) return true;
+        return addElement(this.studentSpecialty, studentSpecialty);
+    }
+    private String getStudentSpecialty(int id){
+        return getElementById(this.studentSpecialty, id);
+    }
+    private int getIdStudentSpecialty(String studentSpecialty){
+        return getIdByElement(this.studentSpecialty, studentSpecialty);
+    }
+    private boolean delStudentStudentSpecialty(String studentSpecialty){
+        return deleteElement(this.studentSpecialty, studentSpecialty);
+    }
+    private void expandStudentSpecialty(){
+        expandArray(this.studentSpecialty);
+    }
+    private boolean checkStudentSpecialty(String studentSpecialty){
+        return checkElementInArray(this.studentSpecialty,studentSpecialty);
+    }
+
+//    studentCourse
+    private boolean addStudentCourse(String studentCourse){
+        if(checkStudentCourse(studentCourse)) return true;
+        return addElement(this.studentCourse, studentCourse);
+    }
+    private String getStudentCourse(int id){
+        return getElementById(this.studentCourse, id);
+    }
+    private int getIdStudentCourse(String studentCourse){
+        return getIdByElement(this.studentCourse, studentCourse);
+    }
+    private boolean delStudentCourse(String studentCourse){
+        return deleteElement(this.studentCourse, studentCourse);
+    }
+    private void expandStudentCourse(){
+        expandArray(this.studentCourse);
+    }
+    private boolean checkStudentCourse(String studentCourse){
+        return checkElementInArray(this.studentCourse,studentCourse);
+    }
+
+    private void initArr(int[] array){
+        for(int i = 0; i < array.length; i++){
+            array[i] = DEFAULT_ERROR_INT_CODE;
+        }
+    }
+    private void initArr(int[][] array){
+        for(int i = 0; i < array.length; i++){
+            if(array[i] != DEFAULT_ERROR_OBJECT_CODE){ initArr(array[i]);}
+        }
+    }
+    private void initArr(String[] array){
+        for(int i = 0; i < array.length; i++){
+            array[i] = (String)DEFAULT_ERROR_OBJECT_CODE;
+        }
+    }
+
+    private boolean checkElementInArray(String[] array, String element) {
+        for (int i = 0; i < array.length; i++ ){
+            if(array[i] != null && array[i].equals(element)){
+                return true;
+            }
+        }
+        return false;
+    }
+    private boolean checkElementInArray(int[] array, int element) {
+        for (int i = 0; i < array.length; i++ ){
+            if(array[i] != DEFAULT_ERROR_INT_CODE && array[i] == element){
                 return true;
             }
         }
         return false;
     }
 
-    //удаление по фамилии
-    public boolean delStudentBySurname(String surname){
-        //todo найти студента с такой фамилией, если нет то вернуть false
-        //todo получить группу студента
-        //todo получить id студента
-        //todo удалить студента из БД студентов
-        //todo удалить пустые элементы из БД студентов
-        //todo найти id группы по названию
-        //todo в списке студентов по группам найти группу по id и удалить студента по id студента
-        //todo  удалить пустые элементы из группы по id
-        // Если все ок вернуть true
-        return true;
+    private int[] getElementById(int[][] array, int id){
+        if(id <= DEFAULT_ERROR_INT_CODE || id >= array.length){
+            return null;
+        }
+        return array[id];
     }
+    private int getElementById(int[] array, int id){
+        if(id <= DEFAULT_ERROR_INT_CODE || id >= array.length){
+            return DEFAULT_ERROR_INT_CODE;
+        }
+        return array[id];
+    }
+    private String getElementById(String[] array, int id){
+        if(id <= DEFAULT_ERROR_INT_CODE || id >= array.length){
+            return ""+ DEFAULT_ERROR_INT_CODE;
+        }
+        return array[id];
+    }
+
+    private boolean addElement(String[] array, String element){
+        if(checkElementInArray(array , element)) return true;
+        for(int i = 0 ; i < array.length; i++){
+            if(array[i] == null){
+                array[i] = element;
+                return true;
+            }
+        }
+        // если мы тут попали то мы не смогли найти место для добавления, поэтому надо расширить
+        expandArray(array);
+        return addElement(array, element);
+    }
+    private boolean addElement(int[] array, int element){
+        if(checkElementInArray(array , element)) return true;
+        for(int i = 0 ; i < array.length; i++){
+            if(array[i] == DEFAULT_ERROR_INT_CODE){
+                array[i] = element;
+                return true;
+            }
+        }
+        // если мы тут попали то мы не смогли найти место для добавления, поэтому надо расширить
+        expandArray(array);
+        return addElement(array, element);
+    }
+    private boolean addElement(String[] array, String element, int ignoreLastElements){
+        if(checkElementInArray(array , element)) return true;
+        for(int i = 0 ; i < array.length-ignoreLastElements; i++){
+            if(array[i] == null){
+                array[i] = element;
+                return true;
+            }
+        }
+        // если мы тут попали то мы не смогли найти место для добавления, поэтому надо расширить
+        expandArray(array);
+        return addElement(array, element);
+    }
+    private boolean addElement(int[] array, int element, int ignoreLastElements){
+        if(checkElementInArray(array , element)) return true;
+        for(int i = 0 ; i < array.length-ignoreLastElements; i++){
+            if(array[i] == DEFAULT_ERROR_INT_CODE){
+                array[i] = element;
+                return true;
+            }
+        }
+        // если мы тут попали то мы не смогли найти место для добавления, поэтому надо расширить
+        expandArray(array);
+        return addElement(array, element);
+    }
+
+    private boolean deleteElement(String[] array, String element){
+        for(int i = 0; i < array.length; i++){
+            if(array[i].equals(element)){
+                array[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
+    private boolean deleteElement(int[] array, int element){
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == element){
+                array[i] = DEFAULT_ERROR_INT_CODE;
+                return true;
+            }
+        }
+        return false;
+    }
+    private boolean deleteElement(int[][] array, int[] element){
+        for(int i = 0; i < array.length; i++){
+            if(array[i].length == element.length){
+                for(int j = 0; j < array[i].length; j++){
+                    if(array[i][j] != element[j]){
+                        return false;
+                    }
+                }
+                array[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private int getIdByElement(String[] array, String element) {
+        for(int i = 0; i < array.length; i++){
+            if(array[i].equals(element)){
+                return i ;
+            }
+        }
+        return DEFAULT_ERROR_INT_CODE;
+    }
+    private int getIdByElement(int[][] array, int findElement, int filtreId){
+        for(int i = 0; i < array.length; i++ ){
+            if(filtreId <= DEFAULT_ERROR_INT_CODE || filtreId >= array[i].length ){
+                System.out.println("При вызове массива мы получили ошибку переполнения массива в " + array[i].toString() + " " +
+                        "Елементов меньше, чем мы искали по фильтру под номером " + filtreId);
+                break;
+            }
+            if(array[i][filtreId] == findElement){
+                System.out.println("Мы нашли нужный элемент");
+                return i;
+            }
+        }
+        return DEFAULT_ERROR_INT_CODE;
+    }
+    private int getIdByElement(int[] array, int element){
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == element){
+                return i ;
+            }
+        }
+        return DEFAULT_ERROR_INT_CODE;
+    }
+
+    private void expandArray(int[][] array) {
+        int [][] tempArray = new int[array.length * 2][]; // увеличить в 2 раза масив
+        for(int i = 0; i < array.length; i++){
+            tempArray[i] = new int[array[i].length];
+           // initArr(tempArray[i]);
+            for(int j = 0; j < array[i].length; j++){
+                tempArray[i][j] = array[i][j];
+            }
+        }
+        array = tempArray;
+    }
+    private void expandArray(int[] array) {
+        int[] tempArray = new int[array.length * 2]; // увеличить в 2 раза масив
+        for(int i = 0; i < array.length; i++){
+            tempArray[i] = array[i];
+        }
+        array = tempArray;
+    }
+    private void expandArray(String[] array){
+        String[] tempArray = new String[array.length * 2]; // увеличить в 2 раза масив
+        for(int i = 0; i < array.length; i++){
+            tempArray[i] = array[i];
+        }
+
+        array = tempArray;
+    }
+
+    private boolean isError(int code){
+        if(code == DEFAULT_ERROR_INT_CODE){
+            return true;
+        }
+        return false;
+    }
+    private boolean isError(String code){
+        if(code == null){
+            return true;
+        }
+        return false;
+    }
+    private boolean isError(int[] code){
+        if(code.length == 0){
+            return true;
+        }
+        return false;
+    }
+    private boolean isError(String[] code){
+        if(code.length == 0){
+            return true;
+        }
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
 
 //todo function    contains - есть ли студент с определенной фамилией в группе
     public boolean containsStudentWithSurnameInGroup(String surname, String Group){
@@ -203,7 +545,6 @@ public class StudentsArr {
 //todo function    containsAll - есть ли группа студентов в другой группе
 //todo function    equals - одинаковые ли группы
 //todo function    print - красивый вывод на печать группы
-
 
 
 /*
@@ -231,7 +572,5 @@ public class StudentsArr {
         }
         return isStudentsClear;
     }
-
-
 */
 }
