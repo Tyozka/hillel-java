@@ -3,8 +3,7 @@ package HomeWork3;
 import java.util.Scanner;
 
 public class coordinate {
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
         int x1, y1, x2, y2, x3, y3;
         System.out.println("Введите координаты x верхнего левого угла прямоугольника");
         x1 = enterNumber();
@@ -27,8 +26,7 @@ public class coordinate {
         }
 
     }
-
-    private static int enterNumber() {
+    private static int enterNumber(){
         Scanner scanner = new Scanner(System.in);
         StringBuilder inputString = new StringBuilder("");
         int number;
@@ -52,6 +50,4 @@ public class coordinate {
 
         return number;
     }
-
-
 }
