@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fae8bf76-97fe-4540-bc18-29d4eb1e9f9e" name="Default" comment="">
+    <list default="true" id="fae8bf76-97fe-4540-bc18-29d4eb1e9f9e" name="Default" comment="Мелкие доработки">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java" afterPath="$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,22 +17,56 @@
     <favorites_list name="hillel-java" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="HomeWork1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="StudentsArr.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="35" column="59" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="-493">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#StudentsArr#0" expanded="false" />
+                <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+                <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+                <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+                <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+                <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeWork1CorrMistakes.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,6 +80,16 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>studentName</find>
+      <find>addNewGroupByName</find>
+      <find>Double</find>
+      <find>getGroupIdByName</find>
+      <find>getGroupIdB</find>
+      <find>initArr</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +106,14 @@
         <option value="$PROJECT_DIR$/src/HomeWork1/HomeWork1CorMistakes.java" />
         <option value="$PROJECT_DIR$/src/HomeWork1/HomeWork1.java" />
         <option value="$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/CalcNew.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/ArithmeticMean.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/ArithmeticMeanAnyNumbers.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/AverageOfTwo.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/AverageAnyNumbers.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork2/Task4_1DrawRectangle.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork3/TestArray.java" />
+        <option value="$PROJECT_DIR$/src/HomeWork3/StudentsArr.java" />
       </list>
     </option>
   </component>
@@ -87,8 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,13 +165,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomeWork1" />
+              <option name="myItemId" value="HomeWork3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hillel-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hillel-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,15 +205,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HomeWork1CorrMistakes">
-    <configuration default="false" name="HomeWork1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestArray">
+    <configuration default="false" name="HomeWork1CorrMistakes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="HomeWork1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="HomeWork1.HomeWork1" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork1.HomeWork1CorrMistakes" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -161,14 +226,74 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="HomeWork1CorrMistakes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Task3CompoundInterest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="HomeWork1.*" />
+          <option name="PATTERN" value="HomeWork2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="HomeWork1.HomeWork1CorrMistakes" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork2.Task3CompoundInterest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hillel-java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Task4_1DrawRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="HomeWork2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="HomeWork2.Task4_1DrawRectangle" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hillel-java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StudentsArr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="HomeWork3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="HomeWork3.StudentsArr" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hillel-java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="HomeWork3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="HomeWork3.TestArray" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -385,14 +510,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.HomeWork1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HomeWork1CorrMistakes" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.HomeWork1CorrMistakes" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Task3CompoundInterest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Task4_1DrawRectangle" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StudentsArr" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestArray" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.HomeWork1CorrMistakes" />
-        <item index="1" class="java.lang.String" itemvalue="Application.HomeWork1" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestArray" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StudentsArr" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Task4_1DrawRectangle" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Task3CompoundInterest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HomeWork1CorrMistakes" />
       </list>
     </recent_temporary>
   </component>
@@ -442,10 +573,73 @@
       <option name="project" value="LOCAL" />
       <updated>1494794834674</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Вынес проверку ввода в отдельную функцию">
+      <created>1494794988476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494794988476</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Калькулятор с вводом операции">
+      <created>1494797021802</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1494797021802</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Среднее арифметическое двух чисел">
+      <created>1494799445986</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1494799445986</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Среднее арифметическое произвольного количества чисел">
+      <created>1494802292788</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1494802292788</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Смена имени">
+      <created>1494802542951</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1494802542951</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Мелкие доработки">
+      <created>1494802748355</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1494802748355</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Мелкие доработки">
+      <created>1494803021275</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1494803021275</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Draw Rectangle">
+      <created>1494874740903</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1494874740903</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Студенты массивом">
+      <created>1496697599331</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496697599331</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -457,36 +651,62 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.49394855" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1603631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -497,11 +717,32 @@
     <MESSAGE value="Solution of task 1" />
     <MESSAGE value="Решение задачи 1, добавление проверки ввода чисел" />
     <MESSAGE value="Вынес проверку ввода в отдельную функцию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вынес проверку ввода в отдельную функцию" />
+    <MESSAGE value="Калькулятор с вводом операции" />
+    <MESSAGE value="Среднее арифметическое двух чисел" />
+    <MESSAGE value="Среднее арифметическое произвольного количества чисел" />
+    <MESSAGE value="Смена имени" />
+    <MESSAGE value="Мелкие доработки" />
+    <MESSAGE value="Draw Rectangle" />
+    <MESSAGE value="Студенты массивом" />
+    <option name="LAST_COMMIT_MESSAGE" value="Студенты массивом" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -510,19 +751,458 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/TestArray.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="59" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="595">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task3CompoundInterest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task0CalcNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task4_1DrawRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task3CompoundInterest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/CalcNew.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/AverageOfTwo.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/AverageAnyNumbers.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="35" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/CalcNew.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/AverageOfTwo.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/AverageAnyNumbers.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork1/HomeWork1CorrMistakes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task3CompoundInterest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task4_1DrawRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork2/Task0CalcNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/TestArray.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomeWork3/StudentsArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandStudents#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentBySecondeName#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentDateOfBirth#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#delStudentStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentSpecialty#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkStudentCourse#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#initArr#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#checkElementInArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getElementById#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#addElement#3;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#deleteElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#getIdByElement#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#expandArray#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#0;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#1;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#2;class#StudentsArr#0" expanded="false" />
+            <element signature="method#isError#3;class#StudentsArr#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
