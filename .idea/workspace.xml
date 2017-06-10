@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fae8bf76-97fe-4540-bc18-29d4eb1e9f9e" name="Default" comment="Мелкие доработки">
+    <list default="true" id="fae8bf76-97fe-4540-bc18-29d4eb1e9f9e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -636,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496697599331</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Мелкие доработки">
+      <created>1497120220194</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1497120220194</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -721,10 +728,10 @@
     <MESSAGE value="Среднее арифметическое двух чисел" />
     <MESSAGE value="Среднее арифметическое произвольного количества чисел" />
     <MESSAGE value="Смена имени" />
-    <MESSAGE value="Мелкие доработки" />
     <MESSAGE value="Draw Rectangle" />
     <MESSAGE value="Студенты массивом" />
-    <option name="LAST_COMMIT_MESSAGE" value="Студенты массивом" />
+    <MESSAGE value="Мелкие доработки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Мелкие доработки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
